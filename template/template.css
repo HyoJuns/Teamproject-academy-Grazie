@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'Cafe24Ssurround';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cafe24Syongsyong';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Syongsyong.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Cafe24SsurroundAir';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* #region 변수 */
+:root
+{
+    --color-Clinker : hsl(11, 68%, 14%);
+    --color-Gold : hsl(26, 32%, 49%);
+    --color-Flax : hsl(45, 75%, 74%);
+
+    --color-Tutu : hsl(300, 100%, 100%);
+    --color-Black : hsl(0, 0%,0%);
+
+    --family-Cafe24Ssurround : 'Cafe24Ssurround', sans-serif;
+    --family-Cafe24Syongsyong : 'Cafe24Syongsyong', sans-serif;
+    --family-Cafe24SsurroundAir : 'Cafe24SsurroundAir', sans-serif;
+}
+/* #endregion 변수 */
+
+
+/* #region 기본 스타일 */
+*,
+*::before,
+*::after
+{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+.container
+{
+    
+    width: 100%;
+
+    margin : 0 auto;
+}
+
+/* 너비가 1440px 이상이면 작동  */
+@media screen and (min-width : 1440px)
+{
+    .container
+    {
+        /* 정렬 용도  */
+        width : 1440px;
+        height: 100%;
+
+        /* 지워도 될것 */
+        border: 4px solid black;
+
+    }
+}
+
+
+/* #endregion 기본 스타일 */
+
+
+/* #region Header 스타일 */
+#header
+{
+    /* HTML 5 헤더 영역 규격화 */
+    width: 100vw;
+    height: 200px;
+
+    /* 지워도 될것 */
+    background-color: tomato;
+}
+
+/* Mobile Header */
+@media screen and (max-width : 500px) {
+    #header
+    {
+        height: 400px;
+    }
+}
+/* #endregion Header 스타일 */
+
+/* #region Section 스타일 */
+
+section
+{
+    /* 
+        HTML5 Section 요소 전체를 규격화
+    */
+    width: 100vw;
+    height: 600px;
+}
+
+#section-1
+{
+    /* 지워도 될것 */
+    background-color: turquoise;
+}
+#section-2
+{
+    /* 지워도 될것 */
+    background-color: violet;
+}
+#section-3
+{
+    /* 지워도 될것 */
+    background-color: gold;
+}
+
+/* #endregion Section 스타일 */
