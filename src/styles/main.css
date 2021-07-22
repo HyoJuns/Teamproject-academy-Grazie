@@ -119,3 +119,14 @@ section
 }
 
 /* #endregion Section 스타일 */
+
+/* #region Footer 스타일 */
+#footer
+{
+    width: 100vw;
+    height: 200px;
+
+    color : #fff;
+    background-color: var(--color-Clinker);
+}
+/* #endregion Footer 스타일 */
