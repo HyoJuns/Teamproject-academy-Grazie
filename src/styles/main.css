@@ -1,100 +1,245 @@
+/* #region font-face */
 @font-face {
-    font-family: 'Cafe24Ssurround';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff') format('woff');
+    font-family: "Cafe24Ssurround";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff")
+        format("woff");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Cafe24Syongsyong';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Syongsyong.woff') format('woff');
+    font-family: "Cafe24Syongsyong";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Syongsyong.woff")
+        format("woff");
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
-    font-family: 'Cafe24SsurroundAir';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff') format('woff');
+    font-family: "Cafe24SsurroundAir";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff")
+        format("woff");
     font-weight: normal;
     font-style: normal;
 }
-
+/* #endregion */
 /* #region 변수 */
-:root
-{
-    --color-Clinker : hsl(11, 68%, 14%);
-    --color-Gold : hsl(26, 32%, 49%);
-    --color-Flax : hsl(45, 75%, 74%);
+:root {
+    --color-Clinker: hsl(11, 68%, 14%);
+    --color-Gold: hsl(26, 32%, 49%);
+    --color-Flax: hsl(45, 75%, 74%);
 
-    --color-Tutu : hsl(300, 100%, 100%);
-    --color-Black : hsl(0, 0%,0%);
+    --color-Tutu: hsl(300, 100%, 100%);
+    --color-Black: hsl(0, 0%, 0%);
 
-    --family-Cafe24Ssurround : 'Cafe24Ssurround', sans-serif;
-    --family-Cafe24Syongsyong : 'Cafe24Syongsyong', sans-serif;
-    --family-Cafe24SsurroundAir : 'Cafe24SsurroundAir', sans-serif;
+    --family-Cafe24Ssurround: "Cafe24Ssurround", sans-serif;
+    --family-Cafe24Syongsyong: "Cafe24Syongsyong", sans-serif;
+    --family-Cafe24SsurroundAir: "Cafe24SsurroundAir", sans-serif;
 }
 /* #endregion 변수 */
-
-
 /* #region 기본 스타일 */
 *,
 *::before,
-*::after
-{
-    margin : 0;
-    padding : 0;
+*::after {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-.container
-{
-    
-    width: 100%;
+/* 
+    ? 왜 62.5%를 설정하나
+    기본 폰트 크기가 10px로 바뀌기 때문이다. (개발자들은 기본 폰트 크기 10px로 바꾸고 작업하길 선호한다.)
+    왜 10px로 지정하나면 크기를 지정하는 단위인 rem이 있다.
+    이 rem은 html 크기에 비례하여 크기를 지정한다.
+    즉 1rem => 10px,  2 => 2rem
 
-    margin : 0 auto;
+    10px로 안쓰는 경우는 접근성 옵션을 해치기 때문이다.
+    16px * 62.5% = 10px
+*/
+html {
+    font-size: 62.5%;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* 모바일 화면인 경우 전체 폰트 크기 작아지게 설정 */
+@media screen and (max-width: 550px) {
+    html {
+        /* 1rem = 8px */
+        font-size: 50%;
+    }
+}
+
+/* html 요소들을 정렬시켜준다. */
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
 }
 
 /* 너비가 1440px 이상이면 작동  */
-@media screen and (min-width : 1440px)
-{
-    .container
-    {
+@media screen and (min-width: 1440px) {
+    .container {
         /* 정렬 용도  */
-        width : 1440px;
+        width: 1440px;
         height: 100%;
 
+        padding: 0;
         /* 지워도 될것 */
-        border: 4px solid black;
-
+        /* border: 4px solid black; */
     }
 }
-
 
 /* #endregion 기본 스타일 */
 
-
 /* #region Header 스타일 */
-#header
-{
+#header {
     /* HTML 5 헤더 영역 규격화 */
     width: 100vw;
-    height: 200px;
+    height: 100px;
 
     /* 지워도 될것 */
-    background-color: tomato;
+    background-color: var(--color-Clinker);
+
+    transition: height 0.4s cubic-bezier(0.35, 0.92, 1, 1);
+
+    overflow: hidden;
 }
 
-/* Mobile Header */
-@media screen and (max-width : 500px) {
-    #header
-    {
-        height: 400px;
+/* 
+    container 너비 비율에 맞춰 크기 조절
+*/
+.header-logo {
+    float: left;
+    width: 30%;
+    height: 100%;
+    /* background-color: rgb(35, 75, 207); */
+
+    min-width: 150px;
+}
+
+#gnb {
+    float: right;
+    width: 70%;
+    height: 100%;
+    /* background-color: rgb(114, 43, 196); */
+}
+
+/* 로고 사이즈 및 이미지 설정 */
+.header-logo > a {
+    display: block;
+
+    width: 150px;
+    height: 100px;
+
+    margin-left: 4rem;
+
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*  메뉴 위치 및 사이즈 설정 */
+#gnb > ul {
+    width: 100%;
+    height: 100%;
+
+    font-family: var(--family-Cafe24Ssurround);
+    font-size: 1.6rem;
+
+    text-align: right;
+}
+/* 메뉴 목록 리스트 설정 */
+.gnb-list {
+    list-style-type: none;
+
+    display: inline-block;
+
+    margin-top: 4rem;
+
+    letter-spacing: 0.2rem;
+}
+
+/* 메뉴 목록 리스트의 하이퍼링크 설정 */
+.gnb-list > a {
+    text-decoration: none;
+    color: var(--color-Tutu);
+
+    padding: 2.5rem;
+
+    transition: all 0.3s ease-in-out;
+}
+.gnb-list > a:last-child {
+    padding-right: 4rem;
+}
+
+/* 메뉴 목록 리스트의 하이퍼링크 호버 이벤트 */
+.gnb-list > a:hover {
+    background-color: var(--color-Flax);
+    color: var(--color-Black);
+    border-radius: 2rem;
+}
+/* 메뉴 목록 리스트의 하이퍼링크 클릭 이벤트 */
+.gnb-list > a:active {
+    border-radius: 5rem;
+}
+/* 타블렛 크기 설정 */
+@media screen and (max-width: 880px) {
+    #gnb > ul {
+        font-size: 1.4rem;
+    }
+    .gnb-list > a {
+        padding: 1rem;
     }
 }
+
+/* 
+    모바일인 경우 헤더의 높이를 늘려 블럭을 아래로 내림
+*/
+@media screen and (max-width: 550px) {
+    #header {
+        height: 300px;
+    }
+    .header-logo {
+        width: 100%;
+        height: 30%;
+
+        min-width: 325px;
+    }
+
+    #gnb {
+        width: 100%;
+        height: 70%;
+
+        min-width: 325px;
+    }
+
+    /* 모바일에서는 로고 가운데 정렬 */
+    .header-logo > a {
+        margin: 0 auto;
+
+        background-position: center;
+    }
+
+    /* 모바일에서 글꼴 및 여백 설정 */
+    #gnb > ul {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .gnb-list {
+        display: block;
+    }
+    .gnb-list > a {
+        padding: 1rem;
+    }
+}
+
 /* #endregion Header 스타일 */
 
 /* #region Section 스타일 */
 
-section
-{
+section {
     /* 
         HTML5 Section 요소 전체를 규격화
     */
@@ -102,31 +247,195 @@ section
     height: 600px;
 }
 
-#section-1
-{
-    /* 지워도 될것 */
-    background-color: turquoise;
+#section-1 {
+    overflow: hidden;
+
+    position: relative;
 }
-#section-2
-{
+#section-2 {
     /* 지워도 될것 */
     background-color: violet;
 }
-#section-3
-{
+#section-3 {
     /* 지워도 될것 */
     background-color: gold;
 }
 
+/* 배너 설정 */
+.banner-container {
+    position: absolute;
+
+    /* 배너 한 개당 100% 증가 */
+    width: 400%;
+    height: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+
+    /* -100% 당 배너 하나씩 옮김 */
+    left: 0%;
+
+    z-index: -1;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+
+    transition: left 0.5s linear;
+}
+
+/* 테스트 용도 지워버릴 예정 */
+.banner-image:nth-child(1) {
+    background-color: red;
+}
+.banner-image:nth-child(2) {
+    background-color: blue;
+}
+.banner-image:nth-child(3) {
+    background-color: green;
+}
+.banner-image:nth-child(4) {
+    background-color: purple;
+}
+
+/* 배너 밑에 원형 아이콘 */
+.banner-icon-container {
+    position: absolute;
+    width: 160px;
+    height: 3rem;
+
+    z-index: 0;
+
+    /* background-color: rgba(0, 0, 0, 0.2); */
+    bottom: 0;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.banner-icon {
+    list-style-type: none;
+
+    width: 1rem;
+    height: 1rem;
+
+    background-color: white;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease-in;
+}
+/* 배너 아이콘 클릭될 시 활성화 되면 색상 들어오기 */
+/* 자바스크립트 코드 필요 */
+.banner-icon.active {
+    background-color: var(--color-Clinker);
+}
+
+/* 베너 양 옆 화살표 설정 */
+.banner-arrow-container {
+    width: 100%;
+    height: 5rem;
+
+    position: absolute;
+
+    /* background-color: black; */
+
+    bottom: 50%;
+    left: 0;
+
+    z-index: 0;
+
+    overflow: hidden;
+}
+.banner-arrow {
+    width: 5rem;
+    height: 5rem;
+
+    list-style-type: none;
+
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+
+    position: relative;
+
+    cursor: pointer;
+}
+.banner-arrow:first-child {
+    margin-left: 3rem;
+    float: left;
+}
+.banner-arrow:last-child {
+    /* 스크롤바 길이 */
+    margin-right: 3.8rem;
+    float: right;
+}
+.arrow-line {
+    position: absolute;
+    display: block;
+    background-color: white;
+
+    width: 2rem;
+    height: 0.5rem;
+
+    border-radius: 3rem;
+
+    top: 2.25rem;
+    transform-origin: right;
+}
+/* 배너 왼쪽 화살표 */
+.banner-arrow:first-child > .arrow-line:first-child {
+    transform: translateY(-1px) rotate(-135deg);
+    animation: arrow-move-left 1.5s ease-in-out infinite alternate;
+}
+.banner-arrow:first-child > .arrow-line:last-child {
+    transform: translateY(1px) rotate(135deg);
+    animation: arrow-move-left 1.5s ease-in-out infinite alternate;
+}
+/* 배너 오른쪽 화살표 */
+.banner-arrow:last-child > .arrow-line:first-child {
+    transform: translateX(1rem) translateY(-1px) rotate(-45deg);
+    animation: arrow-move-right 1.5s ease-in-out infinite alternate;
+}
+.banner-arrow:last-child > .arrow-line:last-child {
+    transform: translateX(1rem) translateY(1px) rotate(45deg);
+    animation: arrow-move-right 1.5s ease-in-out infinite alternate;
+}
+
+/* 화살표 이동 애니메이션 */
+@keyframes arrow-move-left {
+    0% {
+        left: 0;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+        left: -1.5rem;
+    }
+}
+@keyframes arrow-move-right {
+    0% {
+        left: 0;
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.5;
+        left: 1.5rem;
+    }
+}
 /* #endregion Section 스타일 */
 
 /* #region Footer 스타일 */
-#footer
-{
+#footer {
     width: 100vw;
     height: 200px;
 
-    color : #fff;
+    color: #fff;
     background-color: var(--color-Clinker);
 }
 /* #endregion Footer 스타일 */

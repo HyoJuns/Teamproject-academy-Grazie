@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Icon 설정 -->
-    <link rel="icon" type="image/svg" sizes="32x32" href="src/images/icon.png">
+    <!-- Title 화면 아이콘 설정 -->
+    <link rel="icon" type="image/ico" sizes="32x32" href="src/images/ICON.ico">
 
     <!-- Title 화면 설정 -->
     <title>Grazie Coffee & Bakery</title>
@@ -20,17 +21,46 @@
     <!-- Javascript 설정 -->
     <script defer src="./src/scripts/main.js"></script>
 </head>
-<body>
-    <!-- #region Loading Page -->
-    <div id="loading-page">
 
-    </div>
-    <!-- #endregion -->
+<body>
+    <!-- 
+        Header 부분은 문서 전체 너비를 담당한다.
+        container 클래스는 문서 너비가 1440px 넘어가면 자동으로 맞춰 준다.
+     -->
 
     <!-- #region Header -->
     <header id="header">
         <div class="container">
-            
+            <!-- 로고 -->
+            <h1 class="header-logo">
+                <a href="#header"></a>
+            </h1>
+
+            <!-- 메뉴 -->
+            <nav id="gnb">
+                <ul>
+                    <li class="gnb-list">
+                        <a href="#">
+                            Cafe Grazie
+                        </a>
+                    </li>
+                    <li class="gnb-list">
+                        <a href="#">
+                            Story
+                        </a>
+                    </li>
+                    <li class="gnb-list">
+                        <a href="#">
+                            Menu
+                        </a>
+                    </li>
+                    <li class="gnb-list">
+                        <a href="#">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </header>
     <!-- #endregion -->
@@ -38,9 +68,36 @@
 
     <!-- #region Section-1 -->
     <section id="section-1">
-        <div class="container">
-            <h1>Section-1</h1>
-        </div>
+        <!-- 베너 컨테이너 -->
+        <ul class="banner-container">
+            <!-- 
+                    베너 이미지 갯수 
+                    자바스크립트에서 수정할 위치
+                -->
+            <li class="banner-image"></li>
+            <li class="banner-image"></li>
+            <li class="banner-image"></li>
+            <li class="banner-image"></li>
+        </ul>
+        <!-- 베너 밑에 원형 아이콘 -->
+        <ul class="banner-icon-container">
+            <li class="banner-icon active"></li>
+            <li class="banner-icon"></li>
+            <li class="banner-icon"></li>
+            <li class="banner-icon"></li>
+        </ul>
+
+        <!-- 배너 양 옆 화살표 -->
+        <ul class="banner-arrow-container">
+            <li class="banner-arrow">
+                <span class="arrow-line"></span>
+                <span class="arrow-line"></span>
+            </li>
+            <li class="banner-arrow">
+                <span class="arrow-line"></span>
+                <span class="arrow-line"></span>
+            </li>
+        </ul>
     </section>
     <!-- #endregion -->
 
@@ -72,4 +129,5 @@
 
 
 </body>
+
 </html>
