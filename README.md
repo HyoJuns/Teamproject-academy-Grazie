@@ -21,26 +21,22 @@
 
 스크린샷 (미완성)
 
-
 ### Link
 
-- GitHub : [Add solution URL here](#)
-- Live Site : [Add Live Site URL here](#)
+-   GitHub : [GitHub HomePage](https://github.com/HyoJuns/Teamproject-academy-Grazie)
+-   Live Site : [GitHub Live Site](https://hyojuns.github.io/Teamproject-academy-Grazie/)
 
 ## My process
 
 ### Built with
 
-- Semantic HTML5 Markup
-- Css Custom properties
-- Flexbox
-- CSS Grid
-
+-   Semantic HTML5 Markup
+-   Css Custom properties
+-   Flexbox
 
 ### What I learned
 
 규격이 필요하다는 걸 느꼈다.
-
 
 ### Continued development
 
@@ -48,5 +44,5 @@
 
 ## Author
 
-- WebSite : [Add your name here](https://www.your-site.com)
-- 
+-   WebSite : [Add your name here](https://www.your-site.com)
+-
