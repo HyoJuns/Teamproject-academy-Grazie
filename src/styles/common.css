@@ -1,0 +1,264 @@
+/* 글꼴 설치 */
+@font-face {
+    font-family: "Cafe24Ssurround";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24Ssurround.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Cafe24Syongsyong";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Syongsyong.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: "Cafe24SsurroundAir";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/Cafe24SsurroundAir.woff")
+        format("woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --color-Clinker: hsl(11, 68%, 14%);
+    --color-Gold: hsl(26, 32%, 49%);
+    --color-Flax: hsl(45, 75%, 74%);
+
+    --color-Tutu: hsl(300, 100%, 100%);
+    --color-Black: hsl(0, 0%, 0%);
+
+    --family-Cafe24Ssurround: "Cafe24Ssurround", sans-serif;
+    --family-Cafe24Syongsyong: "Cafe24Syongsyong", sans-serif;
+    --family-Cafe24SsurroundAir: "Cafe24SsurroundAir", sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* 
+    ? 왜 62.5%를 설정하나
+    기본 폰트 크기가 10px로 바뀌기 때문이다. (개발자들은 기본 폰트 크기 10px로 바꾸고 작업하길 선호한다.)
+    왜 10px로 지정하나면 크기를 지정하는 단위인 rem이 있다.
+    이 rem은 html 크기에 비례하여 크기를 지정한다.
+    즉 1rem => 10px,  2 => 2rem
+
+    10px로 안쓰는 경우는 접근성 옵션을 해치기 때문이다.
+    16px * 62.5% = 10px
+*/
+
+html {
+    font-size: 62.5%;
+}
+body {
+    overflow-x: hidden;
+}
+
+/* 모바일 화면인 경우 전체 폰트 크기 작아지게 설정 */
+@media screen and (max-width: 550px) {
+    html {
+        /* 1rem = 8px */
+        font-size: 50%;
+    }
+}
+
+/* html 요소들을 정렬시켜준다. */
+.container {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    /* outline: 2px dashed black; */
+}
+
+/* 너비가 1440px 이상이면 작동  */
+@media screen and (min-width: 1440px) {
+    .container {
+        /* 정렬 용도  */
+        width: 1440px;
+        height: 100%;
+
+        padding: 0;
+        /* 지워도 될것 */
+        /* border: 4px solid black; */
+    }
+}
+
+/* #region Header 스타일 */
+#header {
+    /* HTML 5 헤더 영역 규격화 */
+    width: 100vw;
+    height: 100px;
+
+    /* 지워도 될것 */
+    background-color: var(--color-Clinker);
+
+    transition: height 0.4s cubic-bezier(0.35, 0.92, 1, 1);
+
+    overflow: hidden;
+}
+
+/* 
+    container 너비 비율에 맞춰 크기 조절
+*/
+.header-logo {
+    float: left;
+    width: 30%;
+    height: 100%;
+    /* background-color: rgb(35, 75, 207); */
+
+    min-width: 150px;
+}
+
+#gnb {
+    float: right;
+    width: 70%;
+    height: 100%;
+    /* background-color: rgb(114, 43, 196); */
+}
+
+/* 로고 사이즈 및 이미지 설정 */
+.header-logo > a {
+    display: block;
+
+    width: 150px;
+    height: inherit;
+
+    margin-left: 4rem;
+
+    background-image: url(../images/logo.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*  메뉴 위치 및 사이즈 설정 */
+#gnb > ul {
+    width: 100%;
+    height: 100%;
+
+    font-family: var(--family-Cafe24Ssurround);
+    font-size: 1.6rem;
+
+    text-align: right;
+}
+/* 메뉴 목록 리스트 설정 */
+.gnb-list {
+    list-style-type: none;
+
+    display: inline-block;
+
+    margin-top: 4rem;
+
+    letter-spacing: 0.2rem;
+}
+
+/* 메뉴 목록 리스트의 하이퍼링크 설정 */
+.gnb-list > a {
+    text-decoration: none;
+    color: var(--color-Tutu);
+
+    padding: 2.5rem;
+
+    transition: all 0.3s ease-in-out;
+}
+.gnb-list:last-child {
+    padding-right: 4rem;
+}
+
+/* 메뉴 목록 리스트의 하이퍼링크 호버 이벤트 */
+.gnb-list > a:hover {
+    background-color: var(--color-Flax);
+    color: var(--color-Black);
+    border-radius: 2rem;
+}
+/* 메뉴 목록 리스트의 하이퍼링크 클릭 이벤트 */
+.gnb-list > a:active {
+    border-radius: 5rem;
+}
+/* 타블렛 크기 설정 */
+@media screen and (max-width: 880px) {
+    #gnb > ul {
+        font-size: 1.4rem;
+    }
+    .gnb-list > a {
+        padding: 1rem;
+    }
+}
+
+/* 
+    모바일인 경우 헤더의 높이를 늘려 블럭을 아래로 내림
+*/
+@media screen and (max-width: 550px) {
+    #header {
+        height: 300px;
+    }
+    .header-logo {
+        width: 100%;
+        height: 30%;
+
+        min-width: 325px;
+    }
+
+    #gnb {
+        width: 100%;
+        height: 70%;
+
+        min-width: 325px;
+    }
+
+    /* 모바일에서는 로고 가운데 정렬 */
+    .header-logo > a {
+        margin: 0 auto;
+
+        background-position: center;
+    }
+
+    /* 모바일에서 글꼴 및 여백 설정 */
+    #gnb > ul {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .gnb-list {
+        display: block;
+    }
+    .gnb-list > a {
+        padding: 1rem;
+    }
+}
+
+/* #endregion Header 스타일 */
+#footer {
+    width: 100vw;
+    height: 150px;
+
+    color: #fff;
+    background-color: var(--color-Clinker);
+}
+
+#footer > .container {
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.footer-paragraph {
+    width: 34%;
+    font-family: var(--family-Cafe24SsurroundAir);
+
+    margin: auto 0;
+    line-height: 1.7;
+    font-size: 1.2rem;
+    text-align: center;
+
+    /* outline: 2px solid red; */
+}
+.footer-paragraph:last-child {
+    text-align: right;
+    padding-right: 4.2rem;
+}
