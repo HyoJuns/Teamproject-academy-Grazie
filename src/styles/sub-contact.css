@@ -1,6 +1,6 @@
 .contact-form {
     width: 50%;
-    height: 50rem;
+    height: 70rem;
     font-family: var(--family-Cafe24Syongsyong);
 
     /* outline: 1px solid rosybrown; */
@@ -22,15 +22,26 @@
 .section-circle {
     position: absolute;
 
-    width: 40rem;
-    height: 50rem;
+    width: 60rem;
+    height: 60rem;
 
     background-color: var(--color-Gold);
-    border-radius: 45%;
+    border-radius: 30rem;
 
-    left: -30rem;
+    top: 5rem;
+    left: -60rem;
 
     z-index: -1;
+
+    animation: rotatecircle 20s infinite ease-in-out forwards;
+}
+@keyframes rotatecircle {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 input {
@@ -48,7 +59,7 @@ label {
 .form-email,
 .form-subject,
 .form-message {
-    margin: 2rem;
+    margin: 4rem;
 }
 
 input[type="text"],

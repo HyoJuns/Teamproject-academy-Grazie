@@ -364,6 +364,48 @@ section {
     width: calc(40% - 6rem);
     height: calc(50% - 2rem);
 }
-/* #region Footer 스타일 */
 
-/* #endregion Footer 스타일 */
+/* 타블렛 크기 설정 */
+@media screen and (max-width: 880px) {
+    #section-2 {
+        height: 1500px;
+    }
+    .section-2-menu-container {
+        flex-direction: column;
+        height: inherit;
+        justify-content: space-evenly;
+    }
+
+    .section-2-menu-item {
+        width: 30rem;
+        height: 40rem;
+    }
+
+    .section-2-menu-heading {
+        font-size: 1.8rem;
+    }
+    .section-2-menu-button {
+        padding: 0.3rem 4rem;
+    }
+}
+@media screen and (max-width: 550px) {
+}
+
+@media screen and (max-width: 880px) {
+    #section-3 {
+        height: 1800px;
+    }
+
+    .section-3-layout-item {
+        width: calc(100% - 2rem);
+        height: 25%;
+    }
+    .section-3-layout-item:nth-child(3) {
+        width: calc(100% - 2rem);
+        height: 25%;
+    }
+    .section-3-layout-item:nth-child(4) {
+        width: calc(100% - 2rem);
+        height: 19%;
+    }
+}
