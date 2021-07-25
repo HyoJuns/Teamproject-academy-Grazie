@@ -3,11 +3,12 @@
     height: 50rem;
     font-family: var(--family-Cafe24Syongsyong);
 
-    outline: 1px solid rosybrown;
+    /* outline: 1px solid rosybrown; */
 
     position: relative;
 
-    margin-top: 4rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     margin-left: 12rem;
 }
 
@@ -51,10 +52,11 @@ label {
 }
 
 input[type="text"],
-input[type="email"] {
+input[type="email"],
+input[type="submit"] {
     position: absolute;
     left: 20rem;
-    width: 60%;
+    width: 50%;
     padding: 1rem 1rem;
 
     border-radius: 2.5rem;
@@ -62,6 +64,7 @@ input[type="email"] {
     background-color: var(--color-Flax);
 
     box-shadow: 0.1rem 0.1rem 0.2rem #222;
+    font-family: var(--family-Cafe24Syongsyong);
 }
 textarea {
     position: absolute;
@@ -70,6 +73,14 @@ textarea {
     border-radius: 2.5rem;
     border: none;
     background-color: var(--color-Flax);
-
+    font-family: var(--family-Cafe24Syongsyong);
     box-shadow: 0.1rem 0.1rem 0.2rem #222;
+}
+
+input[type="submit"] {
+    width: 20%;
+    left: 20rem;
+    bottom: 1rem;
+    cursor: pointer;
+    z-index: 10;
 }
