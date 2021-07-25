@@ -84,3 +84,10 @@ input[type="submit"] {
     cursor: pointer;
     z-index: 10;
 }
+
+.coffee {
+    position: absolute;
+    top: 10rem;
+    right: 10rem;
+    transform: rotate(-20deg);
+}
