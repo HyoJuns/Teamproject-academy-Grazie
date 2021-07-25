@@ -70,6 +70,7 @@ section {
 p.section-paragraph {
     width: 30%;
     margin-top: 4rem;
+    padding-left: 1rem;
     font-size: 1.6rem;
     line-height: 1.8;
     letter-spacing: 0.15rem;
@@ -182,5 +183,42 @@ p.section-paragraph {
     }
     100% {
         transform: rotate(360deg);
+    }
+}
+
+@media screen and (max-width: 880px) {
+    .section-heading {
+        font-size: 1.8rem;
+    }
+    .coffee-line-container {
+        width: 50%;
+    }
+    p.section-paragraph {
+        padding-left: 2rem;
+        width: 60%;
+    }
+
+    .background-circle {
+        width: 40rem;
+        height: 45rem;
+
+        right: -20rem;
+    }
+
+    .section-3-container {
+        flex-direction: column;
+
+        justify-content: center;
+        height: 600px;
+    }
+
+    .section-4-container {
+        width: 100vw;
+        height: 80rem;
+    }
+    .section-4-map-description,
+    .section-4-map {
+        width: inherit;
+        height: 50%;
     }
 }

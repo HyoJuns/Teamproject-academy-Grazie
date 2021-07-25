@@ -5,15 +5,14 @@
  */
 
 class BannerManagement {
-    // 생성자
+    //! 생성자
     constructor(enableBannerContainer, enableBannerIcon) {
         this.enableBannerContainer = enableBannerContainer;
         this.enableBannerIcon = enableBannerIcon;
         this.bannerCount = 0;
     }
 
-    // Setter
-
+    //! Setter
     // bannerCount 값을 설정한다.
     set index(_n) {
         if (_n <= -1) {
@@ -23,7 +22,7 @@ class BannerManagement {
         }
     }
 
-    // Getter
+    //! Getter
     get getContainer() {
         return this.enableBannerContainer;
     }
@@ -36,7 +35,7 @@ class BannerManagement {
     get getCount() {
         return this.bannerCount;
     }
-    // Function
+    //! Function
     bannerNext() {
         ++this.bannerCount;
 
@@ -109,36 +108,4 @@ $(function () {
         $banner.iconMove();
         $banner.bannerMove();
     });
-    // const $bannerIcon = $(bannerIconname);
-    // const $bannerArrow = $(bannerArrowname).children();
-    // let $banner;
-
-    // if (typeof $elem !== undefined) {
-    //     $banner = new BannerManagement($elem);
-    // } else {
-    //     $banner = new BannerManagement($(bannerClassname));
-    // }
-
-    // // 배너 아이콘 이벤트 설정
-    // bannerIconSetting($bannerIcon);
-    // function bannerIconSetting($icon) {
-    //     $icon.click(function () {
-    //         $banner.choice = $(this).index();
-    //         // console.log("INDEX" + $(this).index());
-    //         $icon.removeClass("active");
-    //         $(this).addClass("active");
-    //         $banner.move();
-    //     });
-    // }
-    // // 배너 화살표 이벤트 설정
-    // bannerArrowSetting($bannerArrow);
-    // function bannerArrowSetting($arrow) {
-    //     $arrow.click(function () {
-    //         if ($(this).index()) {
-    //             $banner.bnext.move();
-    //         } else {
-    //             $banner.bback.move();
-    //         }
-    //     });
-    // }
 });
