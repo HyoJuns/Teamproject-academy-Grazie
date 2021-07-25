@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Title 화면 아이콘 설정 -->
+    <link rel="icon" type="image/ico" sizes="32x32" href="src/images/ICON.ico">
+
+    <!-- Title 화면 설정 -->
+    <title>Grazie Coffee & Bakery</title>
+
+    <!-- Css 설정 -->
+    <!--
+        common.css => 모든 페이지 공통으로 들어가는 스타일
+        main.css => index.html 페이지 전용 스타일 
+    -->
+    <link rel="stylesheet" href="./src/styles/common.css">
+    <link rel="stylesheet" href="src/styles/sub-contact.css">
+
+    <!-- JQuery 설정 -->
+    <script src="./src/scripts/jquery-3.6.0.min.js"></script>
+
+    <!-- Javascript 설정 -->
+    <script defer src=""></script>
+</head>
+
+<body>
+    <!-- #region Header -->
+    <header id="header">
+        <div class="container">
+            <!-- 로고 -->
+            <h1 class="header-logo">
+                <a href="#header"></a>
+            </h1>
+
+            <!-- 메뉴 -->
+            <nav id="gnb">
+                <ul>
+                    <li class="gnb-list">
+                        <a href="./index.html">
+                            Cafe Grazie
+                        </a>
+                    </li>
+                    <li class="gnb-list">
+                        <a href="./sub-story.html">
+                            Story
+                        </a>
+                    </li>
+                    <li class="gnb-list">
+                        <a href="./sub-menu.html">
+                            Menu
+                        </a>
+                    </li>
+                    <li class="gnb-list">
+                        <a href="./sub-contact.html">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- #endregion -->
+
+    <section id="section">
+        <div class="container">
+            <span class="section-circle">
+
+            </span>
+
+            <form action="" method="GET" class="contact-form">
+                <h2 class="contact-heading">
+                    Contact Information
+                </h2>
+                <div class="form-name">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required placeholder="이름을 입력하세요">
+                </div>
+                <div class="form-email">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" id="email" required placeholder="이메일을 입력하세요">
+                </div>
+                <div class="form-subject">
+                    <label for="subject">Subject</label>
+                    <input type="text" name="subject" id="subject" required placeholder="제목을 입력해주세요.">
+                </div>
+                <div class="form-message">
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message" cols="50" rows="15" placeholder="메세지를 입력해주세요"></textarea>
+                </div>
+                <div class="form-submit">
+                    <input type="submit" value="Send Message">
+                </div>
+            </form>
+        </div>
+
+    </section>
+    <!-- #region Footer -->
+    <footer id="footer">
+        <div class="container">
+            <!-- 로고 -->
+            <h1 class="header-logo">
+                <a href="#header"></a>
+            </h1>
+            <!-- Copyright -->
+            <p class="footer-paragraph">
+                (주) 풍전 F&B | Tel : 02-338-7241 | Pax : 02-388-7242
+                <br>주소 : 서울특별시 영등포구 양평로 21다길 22 (주구소 : 양평동 5가 20-3) 그라찌에 빌딩 8층
+
+                <br>Copyright&copy;2014 GRAZIE Co.,Ltd ALL RIGHTS RESERVED
+            </p>
+
+            <!-- 이 사이트는 포트폴리오 제작용 -->
+            <p class="footer-paragraph">
+                이 사이트는 포트폴리오 용도 입니다.
+            </p>
+        </div>
+    </footer>
+    <!-- #endregion -->
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+.contact-form {
+    width: 50%;
+    height: 50rem;
+    font-family: var(--family-Cafe24Syongsyong);
+
+    outline: 1px solid rosybrown;
+
+    position: relative;
+
+    margin-top: 4rem;
+    margin-left: 12rem;
+}
+
+.contact-heading {
+    font-family: var(--family-Cafe24Ssurround);
+    font-size: 2rem;
+
+    padding: 2rem 10rem;
+}
+
+.section-circle {
+    position: absolute;
+
+    width: 40rem;
+    height: 50rem;
+
+    background-color: var(--color-Gold);
+    border-radius: 45%;
+
+    left: -30rem;
+
+    z-index: -1;
+}
+
+input {
+    font-size: 1.4rem;
+}
+
+label {
+    font-size: 2rem;
+    text-align: center;
+
+    padding: 2rem;
+}
+
+.form-name,
+.form-email,
+.form-subject,
+.form-message {
+    margin: 2rem;
+}
+
+input[type="text"],
+input[type="email"] {
+    position: absolute;
+    left: 20rem;
+    width: 60%;
+    padding: 1rem 1rem;
+
+    border-radius: 2.5rem;
+    border: none;
+    background-color: var(--color-Flax);
+
+    box-shadow: 0.1rem 0.1rem 0.2rem #222;
+}
+textarea {
+    position: absolute;
+    left: 20rem;
+    padding: 1rem 1rem;
+    border-radius: 2.5rem;
+    border: none;
+    background-color: var(--color-Flax);
+
+    box-shadow: 0.1rem 0.1rem 0.2rem #222;
+}

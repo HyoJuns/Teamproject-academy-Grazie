@@ -1,0 +1,75 @@
+#section {
+    overflow: hidden;
+    width: 100vw;
+
+    min-width: 32.5rem;
+}
+
+.section-container {
+    width: 100%;
+    height: 60rem;
+
+    /* outline: 1px solid bisque; */
+
+    overflow: hidden;
+}
+div[class$="left"] {
+    width: 50%;
+    height: 100%;
+    float: left;
+
+    /* outline: 2px solid tomato; */
+}
+
+div[class$="right"] {
+    width: 50%;
+    height: 100%;
+    float: right;
+
+    /* outline: 2px solid darkgreen; */
+}
+div[class$="left"],
+div[class$="right"] {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    font-family: var(--family-Cafe24SsurroundAir);
+}
+.section-container:nth-child(1) {
+    background-color: teal;
+}
+.section-container:nth-child(2) {
+    background-color: blueviolet;
+}
+.section-container:nth-child(3) {
+    background-color: brown;
+}
+
+.section-heading {
+    padding: 2rem;
+    font-size: 2rem;
+
+    color: var(--color-Tutu);
+}
+/* 3번째꺼 색상 변경 */
+.section-container:nth-child(3) .section-heading {
+    color: var(--color-Black);
+}
+.section-button {
+    padding: 1rem 3rem;
+
+    border: 1px solid var(--color-Tutu);
+
+    text-decoration: none;
+
+    color: var(--color-Tutu);
+
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.section-container:nth-child(3) .section-button {
+    color: var(--color-Black);
+    border: 1px solid var(--color-Black);
+}

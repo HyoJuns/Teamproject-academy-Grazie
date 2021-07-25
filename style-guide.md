@@ -4,42 +4,36 @@
 
 이 홈페이지는 해당 화면 너비로 지정되서 만들 예정이다.
 
-- Mobile : 375px
-- Desktop : 1440px
+-   Mobile : 375px
+-   Desktop : 1440px
 
 ## 색상
 
 ### background Color
 
-- Clinker
-  - hsl(11, 68%, 14%)
-- 금색
-  - hsl(26, 32%, 49%)
-- Flax
-  - hsl(45, 75%, 74%)
+-   Clinker
+    -   hsl(11, 68%, 14%)
+-   금색
+    -   hsl(26, 32%, 49%)
+-   Flax
+    -   hsl(45, 75%, 74%)
 
 ### Font Color
 
-- Tutu
-  - hsl(300, 100%, 100%)
-- Black
-  - hsl(0, 0%,0%)
+-   Tutu
+    -   hsl(300, 100%, 100%)
+-   Black
+    -   hsl(0, 0%,0%)
 
 ## Typography
 
 ### Body Copy
 
-- Font size : 16px
+-   Font size : 16px
 
 ### Font Family
 
-- Family : [Cafe24Surround](https://noonnu.cc/font_page/669)
+-   Family : [Cafe24Surround](https://noonnu.cc/font_page/669)
 
-- Family : [Cafe24Syongsyong](https://noonnu.cc/font_page/346)
-  
-- Family : [Cafe24SsurroundAir](https://noonnu.cc/font_page/670)
-
-## Icons
-
-사용할 아이콘 라이브러리
-- [IcoMoon](https://icomoon.io/)
+-   Family : [Cafe24Syongsyong](https://noonnu.cc/font_page/346)
+-   Family : [Cafe24SsurroundAir](https://noonnu.cc/font_page/670)
