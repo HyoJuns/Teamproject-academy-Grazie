@@ -4,63 +4,77 @@
  * @file main.js
  */
 
-class Banner {
-    constructor(enableBanner) {
-        // 사용할 배너 컨테이너
-        this.enableBanner = enableBanner;
-        // 버튼 카운터
-        this.count = 0;
+class BannerManagement {
+    // 생성자
+    constructor(enableBannerContainer, enableBannerIcon) {
+        this.enableBannerContainer = enableBannerContainer;
+        this.enableBannerIcon = enableBannerIcon;
+        this.bannerCount = 0;
     }
 
-    // 배너 자식 크기
-    size() {
-        const count = this.enableBanner.children().length;
-        return count;
-    }
-    // 배너 이동
-    move() {
-        // console.log(this.count);
-        this.enableBanner.css(
-            "left",
-            this.count * -this.enableBanner.children().eq(0).width()
-        );
-    }
+    // Setter
 
-    // 배너 앞 인덱스 반환
-    get bnext() {
-        ++this.count;
-
-        if (this.count >= this.size()) {
-            this.count = 0;
-        }
-
-        return this;
-    }
-
-    // 배너 뒤 인덱스 반환
-    get bback() {
-        --this.count;
-
-        if (this.count <= -1) {
-            this.count = this.size() - 1;
-        }
-
-        return this;
-    }
-    // 현재 배너 인덱스 반환
-    get bpop() {
-        return this.count;
-    }
-
-    // 인덱스 번호 설정
-    set choice(n) {
-        if (n >= this.size()) {
-            this.count = this.size() - 1;
-        } else if (n <= -1) {
-            this.count = 0;
+    // bannerCount 값을 설정한다.
+    set index(_n) {
+        if (_n <= -1) {
+            this.bannerCount = this.getSize;
         } else {
-            this.count = n;
+            this.bannerCount = _n < this.getSize + 1 ? _n : 0;
         }
+    }
+
+    // Getter
+    get getContainer() {
+        return this.enableBannerContainer;
+    }
+    get getIcon() {
+        return this.enableBannerIcon;
+    }
+    get getSize() {
+        return this.enableBannerContainer.children().length - 1;
+    }
+    get getCount() {
+        return this.bannerCount;
+    }
+    // Function
+    bannerNext() {
+        ++this.bannerCount;
+
+        this.index = this.bannerCount;
+
+        return this;
+    }
+    bannerBack() {
+        --this.bannerCount;
+
+        this.index = this.bannerCount;
+
+        return this;
+    }
+
+    // 아이콘 색상 변경
+    iconMove() {
+        const iconArray = this.enableBannerIcon.children();
+
+        if (typeof iconArray === undefined) {
+            iconArray = $(".banner-icon-container").children();
+        }
+
+        // 아이콘 모두 active 클래스 삭제
+        iconArray.removeClass("active");
+
+        // 해당 아이콘에 active 추가
+        iconArray.eq(this.bannerCount).addClass("active");
+    }
+
+    // 배너 이동
+    bannerMove() {
+        this.enableBannerContainer.css(
+            "left",
+            this.bannerCount *
+                -this.enableBannerContainer.children().eq(0).width()
+        );
+        this.iconMove();
     }
 }
 
@@ -69,37 +83,62 @@ $(function () {
     const bannerIconname = ".banner-icon-container";
     const bannerArrowname = ".banner-arrow-container";
 
-    const $elem = $(bannerClassname);
-    const $bannerIcon = $(bannerIconname).children();
-    const $bannerArrow = $(bannerArrowname).children();
-    let $banner;
+    const $bannerContainer = $(bannerClassname);
+    const $bannerIcon = $(bannerIconname);
+    const $bannerArrow = $(bannerArrowname);
 
-    if (typeof $elem !== undefined) {
-        $banner = new Banner($elem);
-    } else {
-        $banner = new Banner($(bannerClassname));
-    }
+    const $banner = new BannerManagement($bannerContainer, $bannerIcon);
 
-    // 배너 아이콘 이벤트 설정
-    bannerIconSetting($bannerIcon);
-    function bannerIconSetting($icon) {
-        $icon.click(function () {
-            $banner.choice = $(this).index();
-            // console.log("INDEX" + $(this).index());
-            $icon.removeClass("active");
-            $(this).addClass("active");
-            $banner.move();
-        });
-    }
-    // 배너 화살표 이벤트 설정
-    bannerArrowSetting($bannerArrow);
-    function bannerArrowSetting($arrow) {
-        $arrow.click(function () {
-            if ($(this).index()) {
-                $banner.bnext.move();
-            } else {
-                $banner.bback.move();
-            }
-        });
-    }
+    // 아이콘 클릭 이벤트
+    $banner.getIcon.children().click(function () {
+        $banner.index = $(this).index();
+        console.log($(this).index());
+        console.log(`Size : ${$banner.getSize}`);
+        $banner.iconMove();
+        $banner.bannerMove();
+    });
+
+    // 화살표 클릭 이벤트
+    $bannerArrow.children().click(function () {
+        if ($(this).index()) {
+            $banner.bannerNext();
+        } else {
+            $banner.bannerBack();
+        }
+
+        $banner.iconMove();
+        $banner.bannerMove();
+    });
+    // const $bannerIcon = $(bannerIconname);
+    // const $bannerArrow = $(bannerArrowname).children();
+    // let $banner;
+
+    // if (typeof $elem !== undefined) {
+    //     $banner = new BannerManagement($elem);
+    // } else {
+    //     $banner = new BannerManagement($(bannerClassname));
+    // }
+
+    // // 배너 아이콘 이벤트 설정
+    // bannerIconSetting($bannerIcon);
+    // function bannerIconSetting($icon) {
+    //     $icon.click(function () {
+    //         $banner.choice = $(this).index();
+    //         // console.log("INDEX" + $(this).index());
+    //         $icon.removeClass("active");
+    //         $(this).addClass("active");
+    //         $banner.move();
+    //     });
+    // }
+    // // 배너 화살표 이벤트 설정
+    // bannerArrowSetting($bannerArrow);
+    // function bannerArrowSetting($arrow) {
+    //     $arrow.click(function () {
+    //         if ($(this).index()) {
+    //             $banner.bnext.move();
+    //         } else {
+    //             $banner.bback.move();
+    //         }
+    //     });
+    // }
 });
