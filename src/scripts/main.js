@@ -4,8 +4,21 @@
  * @file main.js
  */
 
+
+/**
+ * BannerManagement Class 입니다.
+ * @class BannerManagement
+ * @classdesc 베너를 컨트롤하는 클래스이다.
+ * @version v0.01
+ * @author HyoJuns
+ */
 class BannerManagement {
-    //! 생성자
+    /**
+     * Creates an instance of BannerManagement.
+     * @param {HTMLElement} enableBannerContainer
+     * @param {HTMLElement} enableBannerIcon
+     * @memberof BannerManagement
+     */
     constructor(enableBannerContainer, enableBannerIcon) {
         this.enableBannerContainer = enableBannerContainer;
         this.enableBannerIcon = enableBannerIcon;
@@ -13,7 +26,11 @@ class BannerManagement {
     }
 
     //! Setter
-    // bannerCount 값을 설정한다.
+    /**
+     *
+     * @param {number} _n
+     * @memberof BannerManagement
+     */
     set index(_n) {
         if (_n <= -1) {
             this.bannerCount = this.getSize;
@@ -77,6 +94,7 @@ class BannerManagement {
     }
 }
 
+
 $(function () {
     const bannerClassname = ".banner-container";
     const bannerIconname = ".banner-icon-container";
@@ -91,8 +109,8 @@ $(function () {
     // 아이콘 클릭 이벤트
     $banner.getIcon.children().click(function () {
         $banner.index = $(this).index();
-        console.log($(this).index());
-        console.log(`Size : ${$banner.getSize}`);
+        // console.log($(this).index());
+        // console.log(`Size : ${$banner.getSize}`);
         $banner.iconMove();
         $banner.bannerMove();
     });
