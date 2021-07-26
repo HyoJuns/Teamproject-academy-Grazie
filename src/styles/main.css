@@ -36,7 +36,7 @@ section {
 }
 #section-3 {
     /* 지워도 될것 */
-    background-color: gold;
+    /* background-color: gold; */
 }
 
 /* 배너 설정 */
@@ -275,6 +275,7 @@ section {
     align-self: flex-end;
 }
 .section-2-menu-item-image {
+    width: 40rem;
     filter: blur(1px);
     transition: all 0.4s;
 }
@@ -362,7 +363,7 @@ section {
 .section-3-layout {
     width: 100%;
     height: 80%;
-    outline: 2px solid rgb(228, 19, 19);
+    /* outline: 2px solid rgb(228, 19, 19); */
     margin: 0 auto;
     overflow: hidden;
 }
@@ -371,12 +372,78 @@ section {
     width: 30%;
     height: calc(100% - 2rem);
     margin: 1rem;
-    outline: 2px solid blue;
+    /* outline: 2px solid blue; */
     float: left;
 
     overflow: hidden;
+
+    
+    position: relative;
+}
+.section-3-layout-item > img
+{
+    position : absolute;
+    z-index: 0;
+}
+.section-3-layout-item > h3
+{
+    position : absolute;
+    z-index: 1;
+    color : var(--color-Tutu);
+    font-family: var(--family-Cafe24Ssurround);
+    font-size: 2rem;
+
+    top : 50%;
+    left : 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+h3.notice-heading
+{
+    width: 100%;
+    color : var(--color-Clinker);
+    text-align: left;
+
+    font-family: var(--family-Cafe24SsurroundAir);
+}
+.notice-list
+{
+    font-family: var(--family-Cafe24SsurroundAir);
+    
 }
 
+.notice-list > li
+{
+    padding : 1.5rem;
+}
+.notice-list > li > a
+{
+    font-size: 1.6rem;
+    color : var(--color-Clinker);   
+    text-decoration: none;
+}
+.notice-list > li > a:hover
+{
+    text-decoration: underline;
+}
+.section-3-layout-item:nth-child(1)::before,
+.section-3-layout-item:nth-child(2)::before
+{
+    content: '';
+
+    width: 100%;
+    height: 100%;
+
+    position : absolute;
+
+    background-color: rgba(0,0,0,.4);
+    left : 0;
+    top : 0;
+    z-index: 1;
+}
+.section-3-layout-item:nth-child(2) > img
+{
+    top : -40rem;
+}
 .section-3-layout-item:nth-child(3) {
     width: calc(40% - 6rem);
     height: calc(50% - 2rem);
@@ -384,6 +451,7 @@ section {
 .section-3-layout-item:nth-child(4) {
     width: calc(40% - 6rem);
     height: calc(50% - 2rem);
+    background-color: var(--color-Flax);
 }
 
 /* 타블렛 크기 설정 */
