@@ -60,6 +60,7 @@ label {
 .form-subject,
 .form-message {
     margin: 4rem;
+    position : relative;
 }
 
 input[type="text"],
@@ -74,9 +75,14 @@ input[type="submit"] {
     border: none;
     background-color: var(--color-Flax);
 
-    box-shadow: 0.1rem 0.1rem 0.2rem #222;
+    box-shadow: 0.1rem 0.1rem 0.2rem #222,
+    .05rem .05rem .4rem rgb(56, 55, 55) inset
+    ;
+
     font-family: var(--family-Cafe24Syongsyong);
 }
+
+
 
 
 textarea {
@@ -87,12 +93,14 @@ textarea {
     border: none;
     background-color: var(--color-Flax);
     font-family: var(--family-Cafe24Syongsyong);
-    box-shadow: 0.1rem 0.1rem 0.2rem #222;
+    box-shadow: 0.1rem 0.1rem 0.2rem #222,
+    .05rem .05rem .4rem rgb(56, 55, 55) inset
+    ;
 }
 
 input[type="submit"] {
     width: 20%;
-    left: 20rem;
+    left: 25rem;
     bottom: 1rem;
     cursor: pointer;
     z-index: 10;

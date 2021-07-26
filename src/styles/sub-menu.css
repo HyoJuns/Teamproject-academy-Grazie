@@ -12,6 +12,9 @@
     /* outline: 1px solid bisque; */
 
     overflow: hidden;
+
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
 }
 div[class$="left"] {
     width: 50%;
@@ -37,16 +40,34 @@ div[class$="right"] {
 
     font-family: var(--family-Cafe24SsurroundAir);
 }
-.section-container:nth-child(1) {
-    background-color: teal;
-}
-.section-container:nth-child(2) {
-    background-color: blueviolet;
-}
-.section-container:nth-child(3) {
-    background-color: brown;
-}
+@media screen and (min-width: 801px)
+{
+    .section-container:nth-child(1) {
+        background-image: url('../images/menu-1.jpg');
+    }
+    .section-container:nth-child(2) {
+        background-image: url('../images/menu-2.jpg');
 
+    }
+    .section-container:nth-child(3) {
+        background-image: url('../images/menu-3.jpg');
+
+    }
+}
+@media screen and (max-width: 800px)
+{
+    .section-container:nth-child(1) {
+        background-image: url('../images/mobile-menu1.jpg');
+    }
+    .section-container:nth-child(2) {
+        background-image: url('../images/mobile-menu2.jpg');
+    
+    }
+    .section-container:nth-child(3) {
+        background-image: url('../images/mobile-menu3.jpg');
+    
+    }
+}
 .section-heading {
     padding: 2rem;
     font-size: 2rem;

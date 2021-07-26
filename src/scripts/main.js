@@ -27,7 +27,7 @@ class BannerManagement {
 
     //! Setter
     /**
-     *
+     * 인덱스 값을 설정한다.
      * @param {number} _n
      * @memberof BannerManagement
      */
