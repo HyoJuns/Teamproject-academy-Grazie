@@ -16,8 +16,24 @@ section {
     overflow: hidden;
 
     position: relative;
-}
 
+    height: 900px;
+}
+#section-1::before
+{
+    content: '';
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0,.1);
+
+    position : absolute;
+
+    left :0;
+    top : 0;
+
+    cursor: pointer;
+}
 #section-3 {
     /* 지워도 될것 */
     background-color: gold;
@@ -43,20 +59,25 @@ section {
 .banner-image {
     width: 100%;
     height: 100%;
+
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    overflow: hidden;
 }
 
-/* 테스트 용도 지워버릴 예정 */
 .banner-image:nth-child(1) {
-    background-color: red;
+    background-image: url('../images/banner-1.jpg');
 }
 .banner-image:nth-child(2) {
-    background-color: blue;
+    background-image: url('../images/banner-2.jpg');
 }
 .banner-image:nth-child(3) {
-    background-color: green;
+    background-image: url('../images/banner-3.jpg');
 }
 .banner-image:nth-child(4) {
-    background-color: purple;
+    background-image: url('../images/banner-4.jpg');
 }
 
 /* 배너 밑에 원형 아이콘 */
@@ -314,16 +335,16 @@ section {
         transform: scale(1);
     }
     25% {
-        transform: scale(1.6);
+        transform: scale(1.4);
     }
     40% {
-        transform: scale(1.3);
+        transform: scale(1.2);
     }
     60% {
-        transform: scale(1.8);
+        transform: scale(1.5);
     }
     80% {
-        transform: scale(1.4);
+        transform: scale(1.2);
     }
     100% {
         transform: scale(1);
@@ -387,11 +408,20 @@ section {
     .section-2-menu-button {
         padding: 0.3rem 4rem;
     }
-}
-@media screen and (max-width: 550px) {
-}
 
-@media screen and (max-width: 880px) {
+    .banner-image:nth-child(1) {
+        background-image: url('../images/tablet-banner-1.jpg');
+    }
+    .banner-image:nth-child(2) {
+        background-image: url('../images/tablet-banner-2.jpg');
+    }
+    .banner-image:nth-child(3) {
+        background-image: url('../images/tablet-banner-3.jpg');
+    }
+    .banner-image:nth-child(4) {
+        background-image: url('../images/tablet-banner-4.jpg');
+    }
+
     #section-3 {
         height: 1800px;
     }
@@ -407,5 +437,19 @@ section {
     .section-3-layout-item:nth-child(4) {
         width: calc(100% - 2rem);
         height: 19%;
+    }
+}
+@media screen and (max-width: 550px) {
+    .banner-image:nth-child(1) {
+        background-image: url('../images/mobile-banner-1.jpg');
+    }
+    .banner-image:nth-child(2) {
+        background-image: url('../images/mobile-banner-2.jpg');
+    }
+    .banner-image:nth-child(3) {
+        background-image: url('../images/mobile-banner-3.jpg');
+    }
+    .banner-image:nth-child(4) {
+        background-image: url('../images/mobile-banner-4.jpg');
     }
 }

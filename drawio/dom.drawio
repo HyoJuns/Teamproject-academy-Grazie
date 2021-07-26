@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="wc02m7L-Qtvv-H7UF3Zc" name="Index.html">
-        <mxGraphModel dx="734" dy="498" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="1920" background="#EEEEEE" math="0" shadow="1">
+        <mxGraphModel dx="1296" dy="1580" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="2000" pageHeight="1920" background="#EEEEEE" math="0" shadow="1">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -66,14 +66,6 @@
                 </mxCell>
                 <mxCell id="28" value="Container" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" parent="2" vertex="1">
                     <mxGeometry x="270" y="220" width="120" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="29" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;startArrow=none;endArrow=none;sketch=1;labelBackgroundColor=#EEEEEE;strokeColor=#182E3E;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" parent="2" source="11" target="30" edge="1">
-                    <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="236" y="146" as="sourcePoint"/>
-                    </mxGeometry>
-                </mxCell>
-                <mxCell id="30" value="Container" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" parent="2" vertex="1">
-                    <mxGeometry x="400" y="220" width="120" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="31" value="" style="edgeStyle=elbowEdgeStyle;elbow=vertical;startArrow=none;endArrow=none;sketch=1;labelBackgroundColor=#EEEEEE;strokeColor=#182E3E;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" parent="2" source="13" target="32" edge="1">
                     <mxGeometry relative="1" as="geometry">
@@ -157,7 +149,7 @@
                         <mxPoint x="347" y="582" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="75" value="Shop" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" parent="35" vertex="1">
+                <mxCell id="75" value="Contact" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" parent="35" vertex="1">
                     <mxGeometry x="511" y="265" width="120" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="112" value="" style="edgeStyle=orthogonalEdgeStyle;curved=0;rounded=1;sketch=1;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Comic Sans MS;fontSize=14;fontColor=#1A1A1A;strokeColor=#182E3E;" parent="1" source="76" target="102" edge="1">
@@ -169,35 +161,58 @@
                 <mxCell id="77" value="Container" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" parent="76" vertex="1">
                     <mxGeometry x="31" y="65" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="78" value="" style="edgeStyle=elbowEdgeStyle;curved=0;rounded=1;sketch=1;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;startArrow=none;endArrow=none;" parent="76" source="77" target="79" edge="1">
+                <mxCell id="115" value="" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;startArrow=none;endArrow=none;" edge="1" source="77" target="116" parent="76">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="79" value="fullpage" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" parent="76" vertex="1">
+                <mxCell id="116" value="banner&lt;br&gt;container" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" vertex="1" parent="76">
                     <mxGeometry x="191" y="65" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="80" value="" style="edgeStyle=elbowEdgeStyle;curved=0;rounded=1;sketch=1;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;startArrow=none;endArrow=none;" parent="76" source="79" target="81" edge="1">
+                <mxCell id="117" value="" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;startArrow=none;endArrow=none;" edge="1" source="77" target="118" parent="76">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="118" value="banner icon&lt;br&gt;container" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" vertex="1" parent="76">
+                    <mxGeometry x="191" y="115" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="119" value="" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;startArrow=none;endArrow=none;" edge="1" source="77" target="120" parent="76">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="120" value="banner arrow&lt;br&gt;container" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" vertex="1" parent="76">
+                    <mxGeometry x="191" y="165" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="121" value="" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;startArrow=none;endArrow=none;" edge="1" target="122" source="116" parent="76">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="187" y="532" as="sourcePoint"/>
+                        <mxPoint x="187" y="933" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="81" value="banner" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" parent="76" vertex="1">
+                <mxCell id="122" value="banner image" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" vertex="1" parent="76">
                     <mxGeometry x="351" y="65" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="97" value="" style="edgeStyle=elbowEdgeStyle;curved=0;rounded=1;sketch=1;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;startArrow=none;endArrow=none;" parent="76" source="81" target="98" edge="1">
+                <mxCell id="123" value="" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;startArrow=none;endArrow=none;" edge="1" target="124" source="118" parent="76">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="347" y="932.9999999999998" as="sourcePoint"/>
+                        <mxPoint x="187" y="933" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="98" value="Image" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" parent="76" vertex="1">
-                    <mxGeometry x="511" y="65" width="120" height="40" as="geometry"/>
+                <mxCell id="124" value="banner icon&lt;br&gt;container" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" vertex="1" parent="76">
+                    <mxGeometry x="351" y="115" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="99" value="" style="edgeStyle=elbowEdgeStyle;curved=0;rounded=1;sketch=1;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;startArrow=none;endArrow=none;" parent="76" source="81" target="100" edge="1">
+                <mxCell id="127" value="" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;startArrow=none;endArrow=none;" edge="1" target="128" source="120" parent="76">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="347" y="932.9999999999998" as="sourcePoint"/>
+                        <mxPoint x="187" y="933" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="100" value="Button" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" parent="76" vertex="1">
-                    <mxGeometry x="511" y="114.99999999999977" width="120" height="40" as="geometry"/>
+                <mxCell id="128" value="banner arrow" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" vertex="1" parent="76">
+                    <mxGeometry x="351" y="165" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="129" value="" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;startArrow=none;endArrow=none;" edge="1" target="130" source="128" parent="76">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="347" y="1033" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="130" value="arrow line" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" vertex="1" parent="76">
+                    <mxGeometry x="511" y="165" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="163" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#60a917;strokeColor=#2D7600;" edge="1" parent="1" source="102" target="147">
+                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="102" value="Section-2" style="swimlane;startSize=41;horizontal=1;containerType=tree;rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=24;spacing=0;" parent="1" vertex="1">
                     <mxGeometry x="36" y="1249" width="910" height="321" as="geometry"/>
@@ -205,43 +220,128 @@
                 <mxCell id="103" value="Container" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" parent="102" vertex="1">
                     <mxGeometry x="31" y="65" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="104" value="" style="edgeStyle=elbowEdgeStyle;curved=0;rounded=1;sketch=1;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;startArrow=none;endArrow=none;" parent="102" source="103" target="105" edge="1">
+                <mxCell id="131" value="" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;startArrow=none;endArrow=none;" edge="1" source="103" target="132" parent="102">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="105" value="Flexbox" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" parent="102" vertex="1">
+                <mxCell id="132" value="section-heading" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" vertex="1" parent="102">
                     <mxGeometry x="191" y="65" width="120" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="106" value="" style="edgeStyle=elbowEdgeStyle;curved=0;rounded=1;sketch=1;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;startArrow=none;endArrow=none;" parent="102" source="105" target="107" edge="1">
+                <mxCell id="133" value="" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;startArrow=none;endArrow=none;" edge="1" source="103" target="134" parent="102">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="134" value="section 2 menu container" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" vertex="1" parent="102">
+                    <mxGeometry x="191" y="115" width="130" height="56" as="geometry"/>
+                </mxCell>
+                <mxCell id="135" value="" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;startArrow=none;endArrow=none;" edge="1" target="136" source="134" parent="102">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="187" y="532" as="sourcePoint"/>
+                        <mxPoint x="187" y="1334" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="107" value="Card product" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" parent="102" vertex="1">
-                    <mxGeometry x="351" y="65" width="120" height="40" as="geometry"/>
+                <mxCell id="136" value="section 2 menu&lt;br&gt;item" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" vertex="1" parent="102">
+                    <mxGeometry x="361" y="115" width="130" height="56" as="geometry"/>
                 </mxCell>
-                <mxCell id="108" value="" style="edgeStyle=elbowEdgeStyle;curved=0;rounded=1;sketch=1;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;startArrow=none;endArrow=none;" parent="102" source="107" target="109" edge="1">
+                <mxCell id="137" value="" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;startArrow=none;endArrow=none;" edge="1" target="138" source="136" parent="102">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="347" y="932.9999999999998" as="sourcePoint"/>
+                        <mxPoint x="357" y="1392" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="109" value="Image" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" parent="102" vertex="1">
-                    <mxGeometry x="511" y="65" width="120" height="40" as="geometry"/>
+                <mxCell id="138" value="section 2 menu&lt;br&gt;item image" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" vertex="1" parent="102">
+                    <mxGeometry x="531" y="115" width="130" height="56" as="geometry"/>
                 </mxCell>
-                <mxCell id="110" value="" style="edgeStyle=elbowEdgeStyle;curved=0;rounded=1;sketch=1;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;startArrow=none;endArrow=none;" parent="102" source="107" target="111" edge="1">
+                <mxCell id="141" value="" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;startArrow=none;endArrow=none;" edge="1" target="142" source="138" parent="102">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="347" y="932.9999999999998" as="sourcePoint"/>
+                        <mxPoint x="527" y="1392" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="111" value="Text" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" parent="102" vertex="1">
-                    <mxGeometry x="511" y="114.99999999999977" width="120" height="40" as="geometry"/>
+                <mxCell id="142" value="img" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" vertex="1" parent="102">
+                    <mxGeometry x="701" y="115" width="130" height="56" as="geometry"/>
                 </mxCell>
-                <mxCell id="113" value="" style="edgeStyle=elbowEdgeStyle;curved=0;rounded=1;sketch=1;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;startArrow=none;endArrow=none;" parent="102" source="107" target="114" edge="1">
+                <mxCell id="143" value="" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;startArrow=none;endArrow=none;" edge="1" target="144" source="136" parent="102">
                     <mxGeometry relative="1" as="geometry">
-                        <mxPoint x="347" y="1334" as="sourcePoint"/>
+                        <mxPoint x="357" y="1392" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="114" value="button" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" parent="102" vertex="1">
-                    <mxGeometry x="511" y="165" width="120" height="40" as="geometry"/>
+                <mxCell id="144" value="section 2 menu&lt;br&gt;item heading" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" vertex="1" parent="102">
+                    <mxGeometry x="531" y="181" width="130" height="56" as="geometry"/>
+                </mxCell>
+                <mxCell id="145" value="" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;startArrow=none;endArrow=none;" edge="1" target="146" source="136" parent="102">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="357" y="1392" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="146" value="section 2 menu&lt;br&gt;item button" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" vertex="1" parent="102">
+                    <mxGeometry x="531" y="247" width="130" height="56" as="geometry"/>
+                </mxCell>
+                <mxCell id="178" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fillColor=#60a917;strokeColor=#2D7600;" edge="1" parent="1" source="147" target="164">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="147" value="Section-3" style="swimlane;startSize=41;horizontal=1;containerType=tree;rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=24;spacing=0;" vertex="1" parent="1">
+                    <mxGeometry x="1026" y="1249" width="910" height="321" as="geometry"/>
+                </mxCell>
+                <mxCell id="148" value="Container" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" vertex="1" parent="147">
+                    <mxGeometry x="31" y="65" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="149" value="" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;startArrow=none;endArrow=none;" edge="1" parent="147" source="148" target="150">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="150" value="section-heading" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" vertex="1" parent="147">
+                    <mxGeometry x="191" y="65" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="151" value="" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;startArrow=none;endArrow=none;" edge="1" parent="147" source="148" target="152">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="152" value="section 3&lt;br&gt;layout" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" vertex="1" parent="147">
+                    <mxGeometry x="191" y="115" width="130" height="56" as="geometry"/>
+                </mxCell>
+                <mxCell id="153" value="" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;startArrow=none;endArrow=none;" edge="1" parent="147" source="152" target="154">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="187" y="1334" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="154" value="section 3&lt;br&gt;layout item" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" vertex="1" parent="147">
+                    <mxGeometry x="361" y="115" width="130" height="56" as="geometry"/>
+                </mxCell>
+                <mxCell id="155" value="" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;startArrow=none;endArrow=none;" edge="1" parent="147" source="154" target="156">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="357" y="1392" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="156" value="image" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" vertex="1" parent="147">
+                    <mxGeometry x="531" y="115" width="130" height="56" as="geometry"/>
+                </mxCell>
+                <mxCell id="159" value="" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;startArrow=none;endArrow=none;" edge="1" parent="147" source="154" target="160">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="357" y="1392" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="160" value="text" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" vertex="1" parent="147">
+                    <mxGeometry x="531" y="181" width="130" height="56" as="geometry"/>
+                </mxCell>
+                <mxCell id="161" value="" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;startArrow=none;endArrow=none;" edge="1" parent="147" source="154" target="162">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="357" y="1392" as="sourcePoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="162" value="a" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" vertex="1" parent="147">
+                    <mxGeometry x="531" y="247" width="130" height="56" as="geometry"/>
+                </mxCell>
+                <mxCell id="164" value="footer" style="swimlane;startSize=41;horizontal=1;containerType=tree;rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=24;spacing=0;" vertex="1" parent="1">
+                    <mxGeometry x="1026" y="848" width="910" height="321" as="geometry"/>
+                </mxCell>
+                <mxCell id="165" value="Container" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" vertex="1" parent="164">
+                    <mxGeometry x="31" y="65" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="166" value="" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;startArrow=none;endArrow=none;" edge="1" parent="164" source="165" target="167">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="167" value="header logo" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" vertex="1" parent="164">
+                    <mxGeometry x="191" y="65" width="120" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="168" value="" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;elbow=horizontal;startArrow=none;endArrow=none;" edge="1" parent="164" source="165" target="169">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="169" value="footer&lt;br&gt;paragraph" style="whiteSpace=wrap;html=1;treeFolding=1;treeMoving=1;newEdgeStyle={&quot;edgeStyle&quot;:&quot;elbowEdgeStyle&quot;,&quot;startArrow&quot;:&quot;none&quot;,&quot;endArrow&quot;:&quot;none&quot;};rounded=1;sketch=1;fillColor=#F5AB50;strokeColor=#909090;fontColor=#1A1A1A;fontFamily=Comic Sans MS;fontSize=14;fontStyle=1" vertex="1" parent="164">
+                    <mxGeometry x="191" y="115" width="130" height="56" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
